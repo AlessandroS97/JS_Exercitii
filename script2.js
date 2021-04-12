@@ -14,9 +14,9 @@ let animal1 = {
   },
 }
 
-console.log(animal1.speak())
-console.log(animal1.details())
-console.log(animal1.howOldIAm())
+console.log(animal1.speak());
+console.log(animal1.details());
+console.log(animal1.howOldIAm());
 
 console.log('========================================');
 
@@ -27,9 +27,19 @@ let animal2 = {
   race: "Lovebird",
   friend: animal1,
   myFriendIs: function(){
-      console.log('Prietenul meu este: ' + animal2.friend)
+      console.log(animal1);
   },
+  amIYoungerThanFriend: function(){
+      if ( animal2.age < animal1.age) {
+          console.log('Adevarat');
+      } else {
+          console.log('Fals');
+      }
+  }
 };
-
-
+ 
+console.log('Prietenul meu este: ');
 console.log(animal2.myFriendIs());
+
+console.log('animal2 este mai mic ca animal1?');
+console.log(animal2.amIYoungerThanFriend());
