@@ -7,7 +7,9 @@ class User {
   }
 }
 
-const alessandro = new User("Alessandro", "Ciobanu", 24, ["Front-end Developer",]);
+const alessandro = new User("Alessandro", "Ciobanu", 24, [
+  "Front-end Developer",
+]);
 const marina = new User("Marina", "Ciobanu", 20, ["Cantatul", "Sportul"]);
 const dominik = new User("Dominic", "Balis", 6, ["gaming", "gaming"]);
 const diego = new User("Diego", "Balis", 17, ["Football", "Echitatie"]);
@@ -38,17 +40,19 @@ for (let i = 0; i < users.length; i++) {
 
 console.log("=============================");
 
-console.log('Printam toti userii care au ca hobby Front-end Developer')
-for(let i = 0; i < users.length; i++){
-    if(users[i].hobbies[i] === 'Front-end Developer'){
-        console.log(users[i]);
-    }
+console.log("Printam toti userii care au ca hobby Front-end Developer");
+for (let i = 0; i < users.length; i++) {
+  if (users[i].hobbies.includes("Front-end Developer")) {
+    console.log(users[i]);
+  }
+  // if(users[i].hobbies[i] === 'Front-end Developer'){
+  //     console.log(users[i]);
 }
 
 console.log("=============================");
 
-let toatePrenumele = '';
-for(let i = 0; i < users.length; i++){
-    toatePrenumele += users[i].prenume + ',';
+let toatePrenumele = "";
+for (let i = 0; i < users.length; i++) {
+  toatePrenumele += users[i].prenume + ",";
 }
 console.log(toatePrenumele);
