@@ -7,9 +7,7 @@ class User {
   }
 }
 
-const alessandro = new User("Alessandro", "Ciobanu", 24, [
-  "Front-end Developer",
-]);
+const alessandro = new User("Alessandro", "Ciobanu", 24, ["Front-end Developer",]);
 const marina = new User("Marina", "Ciobanu", 20, ["Cantatul", "Sportul"]);
 const dominik = new User("Dominic", "Balis", 6, ["gaming", "gaming"]);
 const diego = new User("Diego", "Balis", 17, ["Football", "Echitatie"]);
