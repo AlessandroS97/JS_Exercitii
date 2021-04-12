@@ -27,7 +27,7 @@ let animal2 = {
   race: "Lovebird",
   friend: animal1,
   myFriendIs: function(){
-      console.log(animal1);
+      console.log(this.friend);
   },
   amIYoungerThanFriend: function(){
       if ( animal2.age < animal1.age) {
